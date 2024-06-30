@@ -1,15 +1,16 @@
-// Update this page (the content is just a fallback if you fail and example)
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Index = () => {
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
-      <div>
-        <h1 className="text-3xl text-center">Your Blank Canvas</h1>
-        <p className="text-center">
-          Chat with the agent to start making edits.
-        </p>
-      </div>
+    <div className="container mx-auto p-4">
+      <Card>
+        <CardHeader>
+          <CardTitle>Welcome to the Pharmacy Management System</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p>This system helps you manage your pharmacy efficiently with features like inventory management, prescription processing, patient records, point of sale, AI-powered dosage recommendations, and simple reporting.</p>
+        </CardContent>
+      </Card>
     </div>
   );
 };
